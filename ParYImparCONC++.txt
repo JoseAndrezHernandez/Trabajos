@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+void ParOImpar(){
+   int R,Numero;
+   std::cin >> Numero;
+   
+   R=Numero%2;
+   
+   if(R==0){
+       std::cout << Numero<< " "<< "Es un numero par." << std::endl;
+   }
+   else{
+       std::cout << Numero<<" "<< "Es un numero impar." << std::endl;
+   }
+   
+}
+
+int main(){
+    int Numero;
+    
+    std::cout << "Ingrese un numero para confirmar si es par o impar." << std::endl;
+    
+    ParOImpar();
+}

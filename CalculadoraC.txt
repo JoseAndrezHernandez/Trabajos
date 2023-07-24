@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    char j;
+    double numero1,numero2,respuesta1,respuesta2,respuesta3,respuesta4;
+    std::cout << "Ingrese dos numero y un operador." << std::endl;
+    std::cin >> numero1;
+    std::cin >> j;
+    std::cin >> numero2;
+    switch(j){
+        case '+':respuesta1=numero1 + numero2;
+        std::cout << respuesta1 << std::endl;
+        break;
+        case '-':respuesta2=numero1 -numero2;
+        std::cout << respuesta2 << std::endl;
+        break;
+        case '/': respuesta3=numero1/numero2;
+        std::cout << respuesta3 << std::endl;
+        break;
+        case 'x': respuesta4=numero1*numero2;
+        std::cout << respuesta4 << std::endl;
+        break;
+    }
+
+
+    return 0;
+}

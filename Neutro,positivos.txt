@@ -1,0 +1,23 @@
+using namespace std;
+int main(){
+    int matiz[10];
+    double a;
+    
+    std::cout << "Dame 10 numeros y te dire si son positivos, negativos o nulos" << std::endl;
+
+    
+    for(int i=0;i<10;i++){
+           std::cin >> a;
+        if(a>0){
+            std::cout << "Es un numero positivo." << std::endl;
+        }
+            if (a<0){
+                
+                std::cout << "Es un numero negativo." << std::endl;
+            }  
+            if (a==0){
+                std::cout << "Es un numero neutro." << std::endl;
+            }
+        }
+            
+    }

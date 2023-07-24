@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int numerosParesYimpares(){
+    int numero,*numero_p,Resultado;
+    
+    std::cout << "Verificar si un numero es para o impar" << std::endl;
+    std::cin >> numero;
+    Resultado=numero%2;
+    numero_p=&numero;
+    
+    if(Resultado==0){
+        std::cout<<*numero_p << " Es un numero par." << std::endl;
+    }else
+    
+    std::cout << *numero_p<< " Es un numero impar." << std::endl;
+    
+    return 0;
+}
+
+int main()
+{
+    numerosParesYimpares();
+
+    return 0;
+}

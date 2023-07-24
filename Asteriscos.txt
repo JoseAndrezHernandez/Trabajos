@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+int main(){
+    int Numero,R;
+    std::string g=" ";
+    std::cout << "Ingrese un numero." << std::endl;
+    std::cin >> Numero;
+    
+    for(int i=1;i<=Numero;i++){
+        
+        g=g+"*";
+        
+        R=Numero*(Numero+1)/2;
+        std::cout << g << std::endl;
+        
+    }
+      std::cout << "La cantidad de asteriscos es:"<<" "<< R << std::endl;
+}

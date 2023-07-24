@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main(){
+    double segundo,r1,r2;
+    double horas,minutos;
+    std::cout << "Ingrese la cantidad de segundos que desea convertir." << std::endl;
+    std::cin >>segundo;
+
+    horas= segundo/3600;
+    minutos= segundo/60;
+    
+    std::cout << "horas" <<horas<< std::endl;
+    std::cout <<"minutos" <<minutos<< std::endl;
+}

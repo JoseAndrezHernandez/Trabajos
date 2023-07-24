@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    char letra,a,e,i,o,u,A,E,I,O,U;
+    std::cout << "Ingrese una letra para saber si es vocal o consonante." << std::endl;
+    std::cin >> letra;
+        switch(letra){
+        case 'a': std::cout << "es vocal" << std::endl;
+        break;
+        case 'e': std::cout << "es vocal" << std::endl;
+        break;
+        case 'i': std::cout << "es vocal" << std::endl;
+        break;
+        case 'o': std::cout << "es vocal" << std::endl;
+        break;
+        case 'u': std::cout << "es vocal" << std::endl;
+        break;
+        case 'A': std::cout << "es vocal" << std::endl;
+        break;
+        case 'E': std::cout << "es vocal" << std::endl;
+        break;
+        case 'I': std::cout << "es vocal" << std::endl;
+        break;
+        case 'O': std::cout << "es vocal" << std::endl;
+        break;
+        case 'U': std::cout << "es vocal" << std::endl;
+        break;
+        default:
+        std::cout << "Es consonante" << std::endl;
+    }
+
+    return 0;
+}
