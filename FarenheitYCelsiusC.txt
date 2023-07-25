@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+void Calcular(){
+    float Numero,Respuesta;
+    std::cout << "Introduce los grados fahrenheit para convertirlos en Celsius." << std::endl;
+    std::cin >> Numero;
+    Respuesta=(Numero-32)*5/9;
+    std::cout << Respuesta << std::endl;
+   
+    }
+   
+
+
+int main(){
+    Calcular();
+   
+}
