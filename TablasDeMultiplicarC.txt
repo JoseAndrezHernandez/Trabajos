@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+void Numeros_del1al12(){
+    int Numero,Respuesta;
+    std::cout << "Ingrese un numero para mostrar su tabla de multiplicacion" << std::endl;
+    std::cin >> Numero;
+    for(int i=1;i<=12;i++){
+        Respuesta=Numero*i;
+        std::cout << Numero<< "x"<< i<< "="<<Respuesta << std::endl;
+    }
+}
+
+int main(){
+    
+    Numeros_del1al12();
+}
