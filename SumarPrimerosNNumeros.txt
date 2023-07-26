@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void SumarHastaN(){
+    int Numero,Contador=0,Resultado;
+    std::cout << "Introducir un numero para hacer la suma hasta ese numero." << std::endl;
+    std::cin >> Numero;
+    for(int i=1;i<=Numero;i++){
+            Contador=Contador+i;
+    }
+    
+    std::cout << Contador << std::endl;
+    
+}
+
+int main()
+{
+    SumarHastaN();
+
+    return 0;
+}
