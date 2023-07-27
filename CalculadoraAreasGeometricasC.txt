@@ -1,0 +1,62 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void CalcularTriangulo(){
+    int base,altura, AreaDeTriangulo;
+    std::cout << "Ingresar base del triangulo." << std::endl;
+    std::cin >> base ;
+    std::cout << "Ingrese la altura del triangulo." << std::endl;
+    std::cin >> altura;
+    AreaDeTriangulo=(base*altura)/2;
+    std::cout << "El area del triangulo es: "<< AreaDeTriangulo << std::endl;
+}
+
+void CalcularCuadrado(){
+    int lado,AreaDeCuadrado;
+    std::cout << "Ingrese lado del cuadrado." << std::endl;
+    std::cin >> lado;
+    AreaDeCuadrado=lado*lado;
+    std::cout <<"El area del cuadrado es: " << AreaDeCuadrado << std::endl;
+}
+
+void CalcularRectangulo(){
+    int ladoMayor,ladoMenor, AreaDeRectangulo;
+    std::cout << "Ingrese lado mayor del rectangulo." << std::endl;
+    std::cin >> ladoMayor;
+    std::cout << "Ingrese lado menor del rectangulo." << std::endl;
+    std::cin >> ladoMenor;
+    AreaDeRectangulo=ladoMayor*ladoMenor;
+    std::cout << "El area del rectangulo es: "<< AreaDeRectangulo << std::endl;
+    
+}
+
+void CalcularCirculo(){
+    float Radio,AreaDeCirculo;
+    std::cout << "Ingrese el radio del circulo." << std::endl;
+    std::cin >> Radio;
+    AreaDeCirculo=(Radio*Radio)*3.141;
+    std::cout << AreaDeCirculo << std::endl;
+}
+
+int main(){
+    int Seleccion;
+    std::cout << "Calculadora de areas de figuras geometricas" << std::endl;
+    std::cout << "1 Para calcular tringulo." << std::endl;
+    std::cout << "2 para calcular cuadrado." << std::endl;
+    std::cout << "3 para calcular rectangulos." << std::endl;
+    std::cout << "4 para calcular circulos." << std::endl;
+    std::cin >> Seleccion;
+    switch(Seleccion){
+        case 1: CalcularTriangulo();
+        break;
+        case 2:CalcularCuadrado(); 
+        break;
+        case 3: CalcularRectangulo();
+        break;
+        case 4: CalcularCirculo();
+        break;
+    }
+    return 0;
+}
