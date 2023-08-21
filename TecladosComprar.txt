@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main(){
+    int num, PT=100,rm,rm1,rm2;
+    std::cout << "Ingrese el numero de teclados a comprar." << std::endl;
+    std::cin >> num;
+    
+    if(num<4){
+        rm1=PT*num;
+        std::cout << rm1 << std::endl;
+    }
+  
+   if(num>8){
+       rm=(PT-15)*num;
+       std::cout << rm << std::endl;
+   }
+   if(num==6,7){
+       rm2=(PT-10)*num;
+       std::cout << rm2 << std::endl;
+   }
+   
+   
+   
